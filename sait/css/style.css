@@ -1,0 +1,195 @@
+body {
+  font-family: "Circe", sans-serif;
+}
+
+section:not(.bannSection) {
+  padding: 75px 0;
+}
+
+header {
+  position: fixed;
+  height: 100vh;
+  background-color: #333333;
+  z-index: 50;
+}
+header .header {
+  padding: 30px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+header .header .logo-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+header .header .logo-burger .logo {
+  width: 80px;
+  height: 100%;
+}
+header .header .logo-burger .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .header .logo-burger .burger {
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  gap: 7px;
+}
+header .header .logo-burger .burger div {
+  background-color: #B59571;
+  height: 4px;
+  border-radius: 1000px;
+}
+header .header .logo-burger .burger div:nth-of-type(1) {
+  width: 50%;
+}
+header .header .logo-burger .burger div:nth-of-type(3) {
+  width: 75%;
+}
+header .header .social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header .header .social ul a {
+  width: 40px;
+  height: 40px;
+}
+header .header .social ul a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bannSection {
+  position: relative;
+  background-image: url("../img/popa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.bannSection .bannBlock {
+  position: relative;
+  margin: 0 120px;
+  height: 100%;
+  padding: 30px 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bannSection .bannBlock .text {
+  padding-left: 300px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 70%;
+}
+.bannSection .bannBlock nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+}
+.bannSection .bannBlock nav ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+}
+.bannSection .bannBlock nav ul li:last-of-type a {
+  padding: 10px 20px;
+  background-color: #B59571;
+  font-weight: bold;
+}
+
+.bannSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.6;
+}
+
+.title__block {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 90px;
+  margin-bottom: 80px;
+}
+
+.title__block::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #B59571;
+  transform: translateY(-50%);
+}
+
+.aboutSection .menuBlock .info-block,
+.aboutSection .aboutBlock .info-block,
+.menuSection .menuBlock .info-block,
+.menuSection .aboutBlock .info-block {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding-left: 220px;
+}
+.aboutSection .menuBlock .info-block .item .title__name,
+.aboutSection .aboutBlock .info-block .item .title__name,
+.menuSection .menuBlock .info-block .item .title__name,
+.menuSection .aboutBlock .info-block .item .title__name {
+  width: 80%;
+}
+.aboutSection .menuBlock .info-block .item p,
+.aboutSection .aboutBlock .info-block .item p,
+.menuSection .menuBlock .info-block .item p,
+.menuSection .aboutBlock .info-block .item p {
+  font-size: 18px;
+}
+.aboutSection .menuBlock .info-block .item p:last-of-type,
+.aboutSection .aboutBlock .info-block .item p:last-of-type,
+.menuSection .menuBlock .info-block .item p:last-of-type,
+.menuSection .aboutBlock .info-block .item p:last-of-type {
+  margin-bottom: 0;
+}
+
+.title__name {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.2;
+}/*# sourceMappingURL=style.css.map */
