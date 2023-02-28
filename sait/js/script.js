@@ -1,0 +1,1 @@
+$('.menuSection .menuBlock .item .img').height($('.menuSection .menuBlock .item .img').width()*9/16)
